@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro" rel = "stylesheet">
+        <title>Nimで遊ぶ</title>
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <h1>nimで遊ぶ</h1>
+        <h2>遊び方</h2>
+        <ol>
+            <li>5つの山から1つ選び、好きな数を入力します、入力された数だけ山から石が消えます</li>
+            <li>CPUが5つの山から1つを選び、同じく石が消えます</li>
+            <li>1,2を繰り返し、操作できない状態(山に石が一つもない状態)で手番が回ってきたほうが負けです</li>
+        </ol>
+
+        <h2>ゲーム部分</h2>
+
+
+        
+        <div class="pile"></div>
+        <p>どの山を選ぶか(左から順に1,2...5): 
+        <input type="number" min="1" max="100" required id="select" class="select"></p>
+        <p>何個選ぶか: 
+        <input type="number" min="1" max="100" required id="number" class="number"></p>
+        <div><input type="submit" value="Submit" class="submit"></div>
+
+        <div class="resultParas">
+            <p class="lastResult"></p>
+        </div>
+
+
+        <h2>その他</h2>
+
+        <ul>
+            <li>なんかバグってる気がする(nimの必勝法の証明理解してなかったので)</li>
+            <li>自分とCPUの動きの履歴がわかるとやりやすそう</li>
+            <li>図形を描画して操作しやすくしたいが</li>
+            <li>別にgithub pagesでもいいかもな</li>
+        </ul>
+
+    </body>
+</html>
