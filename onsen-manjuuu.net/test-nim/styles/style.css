@@ -1,6 +1,7 @@
 html {
   font-size: 20px;
   font-family: "Source Sans Pro";
+  background-color: whitesmoke;
 }
 
 .pile {
@@ -10,3 +11,9 @@ html {
 ul {
   font-size: 15px;
 }
+
+h1{
+  text-align: center;
+}
+
+
